@@ -1,0 +1,15 @@
+{
+    "TC02": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+    "TC03": {
+        "username": "standard_user",
+        "password": "wrongpassword"
+    },
+    "TC04": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    }
+
+}
