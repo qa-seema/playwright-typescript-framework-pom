@@ -11,6 +11,7 @@ export default defineConfig({
     ...devices['Desktop Chrome'],
     baseURL: 'https://www.saucedemo.com',
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure'
   },
 
   projects: [
@@ -31,5 +32,12 @@ export default defineConfig({
         storageState: authFile,
       },
     },
+  ],
+  reporter: [
+    ['list'],
+    ['html', {
+      outputFolder: 'playwright-report',
+      open: 'always'
+    }]
   ],
 });
